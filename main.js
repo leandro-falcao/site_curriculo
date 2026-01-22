@@ -8,3 +8,12 @@ let heads = document.querySelectorAll("head > link")
 let qtdLinks = heads.length;
 
 let penultimoTagLink = heads[(qtdLinks-2)]
+
+
+
+let body = document.querySelector("body")
+
+let limparBody = body.innerHTML = ""
+
+let inserirEL = body.insertAdjacentHTML('beforeend', `<p style="color: red; font-size: 45px"> Novo último item</p>`);
+
