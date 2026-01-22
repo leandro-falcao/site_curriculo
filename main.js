@@ -17,3 +17,7 @@ let limparBody = body.innerHTML = ""
 
 let inserirEL = body.insertAdjacentHTML('beforeend', `<p style="color: blue; font-size: 245px"> Novo último item</p>`);
 
+
+setTimeout(()=>{console.log("ola !!!!!!!!!!!")}, 3500)
+
+
