@@ -15,5 +15,5 @@ let body = document.querySelector("body")
 
 let limparBody = body.innerHTML = ""
 
-let inserirEL = body.insertAdjacentHTML('beforeend', `<p style="color: red; font-size: 45px"> Novo último item</p>`);
+let inserirEL = body.insertAdjacentHTML('beforeend', `<p style="color: blue; font-size: 245px"> Novo último item</p>`);
 
