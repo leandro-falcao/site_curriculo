@@ -20,4 +20,4 @@ let inserirEL = body.insertAdjacentHTML('beforeend', `<p style="color: blue; fon
 
 setTimeout(()=>{console.log("ola !!!!!!!!!!!")}, 3500)
 
-
+https://cdn.jsdelivr.net/gh/leandro-falcao/site_curriculo@main/main.js
