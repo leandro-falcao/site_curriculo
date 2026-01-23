@@ -58803,12 +58803,12 @@ div.col-4.pl-0.finalize-sidebar-wrapper{display: none !important;}
     visibility: hidden;
   }
   /* aqui a div que quero mostra*/
-.minha-secao, 
-  .minha-secao * {
+  #app > section > div.page-final > section > div:nth-child(2) > div.col-8.finalize-cv-wrapper,
+  #app > section > div.page-final > section > div:nth-child(2) > div.col-8.finalize-cv-wrapper * {
     visibility: visible;
   }
   /* 4. Posiciona a section no topo da folha para não ficar um espaço em branco */
-  .minha-secao {
+  #app > section > div.page-final > section > div:nth-child(2) > div.col-8.finalize-cv-wrapper {
     position: absolute;
     left: 0;
     top: 0;
@@ -58816,7 +58816,8 @@ div.col-4.pl-0.finalize-sidebar-wrapper{display: none !important;}
   }
   /* como dentro da da tag tem área que não quero mostrar, eu simplesmente vou lançar o css da que quero excluir da impressa*/
   /* vamis excluir esses*/
-  .minha-secao aside {
+  #app > section > div.page-final > section > div.row.finalize-page-header, 
+  #app > section > div.page-final > section > div:nth-child(2) > div.col-8.finalize-cv-wrapper > div.row.resume-headers  {
     display: none !important;
   }
 /*já abaixo garante a qualidade de imagens e etc no body*/
@@ -58826,7 +58827,7 @@ div.col-4.pl-0.finalize-sidebar-wrapper{display: none !important;}
     print-color-adjust: exact;
   }
 }
-
+#app > section > div.page-final > section
 /*fim da config de impressao*/
 
 
