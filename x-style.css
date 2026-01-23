@@ -58790,6 +58790,9 @@ div.col-4.pl-0.finalize-sidebar-wrapper{display: none !important;}
 
 
 /* aqui configuração da impressa do site */
+
+
+
 @media print {
   /* 1. Configura o tamanho da página para A4 e as margens */
   @page {
@@ -58804,14 +58807,16 @@ div.col-4.pl-0.finalize-sidebar-wrapper{display: none !important;}
   }
   /* aqui a div que quero mostra*/
   #app > section > div.page-final > section > div:nth-child(2) > div.col-8.finalize-cv-wrapper,
-  #app > section > div.page-final > section > div:nth-child(2) > div.col-8.finalize-cv-wrapper * {
+  #resumeDoc > div:nth-child(3) > div.document.doc-root.doc-finalize.fontsize.fontface.vmargins.hmargins.pgsz-letter.pict-pcpf-none.pagesize.skn-cna1.CNA1.MBR.texp-rectangle.expr-durt-none,
+  #resumeDoc > div:nth-child(3) > div.document.doc-root.doc-finalize.fontsize.fontface.vmargins.hmargins.pgsz-letter.pict-pcpf-none.pagesize.skn-cna1.CNA1.MBR.texp-rectangle.expr-durt-none * {
     visibility: visible;
   }
   /* 4. Posiciona a section no topo da folha para não ficar um espaço em branco */
-  #app > section > div.page-final > section > div:nth-child(2) > div.col-8.finalize-cv-wrapper {
+  #resumeDoc > div:nth-child(3) > div.document.doc-root.doc-finalize.fontsize.fontface.vmargins.hmargins.pgsz-letter.pict-pcpf-none.pagesize.skn-cna1.CNA1.MBR.texp-rectangle.expr-durt-none {
     position: absolute;
     left: 0;
     top: 0;
+    padding: 1px;
     width: 100%;
   }
   /* como dentro da da tag tem área que não quero mostrar, eu simplesmente vou lançar o css da que quero excluir da impressa*/
@@ -58826,6 +58831,32 @@ div.col-4.pl-0.finalize-sidebar-wrapper{display: none !important;}
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
+
+
+
+  
+  .skn-cna1.hmargins {
+    padding-left: 8px;
+    padding-right: 8px;
 }
-#app > section > div.page-final > section
+
+  .skn-cna1.vmargins {
+    padding-top: 5px;
+    padding-bottom: 60px;
+  }
+
+ .page-finalize .document {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.018);
+    background-color: #fff;
+    border: 1px solid #e8ecf0;
+}
+.skn-cna1 {
+    line-height: 19px;
+    color: #404041;
+}
+  
+}
 /*fim da config de impressao*/
+
+
+
