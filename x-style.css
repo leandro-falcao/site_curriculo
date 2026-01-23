@@ -58778,3 +58778,56 @@ html.page-choose-template .single-carousel .document.skn-mlm7 #FIELD_SKC2 li:nth
 .f-show-blurry{
   background-color: #0EA;
 }
+
+/* css a mais*/
+#footer.FooterStyles-sc-fcc2e9fd-0.iyOREJ.footer{display: none !important;}
+/**/
+
+div.col-4.pl-0.finalize-sidebar-wrapper{display: none !important;}
+
+
+
+
+
+/* aqui configuração da impressa do site */
+@media print {
+  /* 1. Configura o tamanho da página para A4 e as margens */
+  @page {
+    size: A4;
+    margin: 0.5cm;
+  }
+  html * {
+    visibility: hidden;
+  }
+  body * {
+    visibility: hidden;
+  }
+  /* aqui a div que quero mostra*/
+.minha-secao, 
+  .minha-secao * {
+    visibility: visible;
+  }
+  /* 4. Posiciona a section no topo da folha para não ficar um espaço em branco */
+  .minha-secao {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  /* como dentro da da tag tem área que não quero mostrar, eu simplesmente vou lançar o css da que quero excluir da impressa*/
+  /* vamis excluir esses*/
+  .minha-secao aside {
+    display: none !important;
+  }
+/*já abaixo garante a qualidade de imagens e etc no body*/
+  /* Dica extra: Garante que as cores e imagens de fundo apareçam (opcional) */
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/*fim da config de impressao*/
+
+
+
